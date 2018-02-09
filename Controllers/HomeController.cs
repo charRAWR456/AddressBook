@@ -12,16 +12,16 @@ namespace AddressBook.Controllers
       return View();
     }
     [HttpGet("/addcontact")]
-    public ActionResult AddContactForm()
+    public ActionResult AddContact()
     {
       return View();
     }
     [HttpPost("/addcontact")]
-    public ActionResult AddContact()
+    public ActionResult AddContactForm()
     {
       string contactName = Request.Form[("contact-name")];
       string contactAddress = Request.Form[("contact-address")];
-      Contact newContact = newContact(contactName, contactAddress);
+      Contact newContact = new Contact(contactName, contactAddress);
       newContact.Save();
 
       List<Contact> allContacts = Contact.GetAll();

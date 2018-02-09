@@ -3,15 +3,14 @@ using System.Collections.Generic;
 
 namespace AddressBook.Models
 {
-  public class AddressBook
+  public class Contact
   {
     private string _name;
     private string _address;
     private int _id;
+    private static List<Contact> _contactList = new List<Contact>{};
 
-    private static List<ContactList> _contactList = new List<ContactList>{};
-
-    public void Contact(string contactName, string contactAddress)
+    public Contact(string contactName, string contactAddress)
     {
       _name = contactName;
       _address = contactAddress;
@@ -28,7 +27,7 @@ namespace AddressBook.Models
     {
       return _address;
     }
-    public void GetContactAddress(string newContactAddress)
+    public void SetContactAddress(string newContactAddress)
     {
       _address = newContactAddress;
     }
@@ -41,7 +40,7 @@ namespace AddressBook.Models
       _contactList.Add(this);
       _id = _contactList.Count;
     }
-    public static List<ContactList> GetContactList()
+    public static List<Contact> GetAll()
     {
       return _contactList;
     }
