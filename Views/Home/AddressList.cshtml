@@ -9,9 +9,20 @@
   <div class="container">
     <h1>Address List</h1>
     <ul>
-      <li></li>
+      @if (Model != null)
+    {
+    @foreach (var contact in Model)
+    {
+      <li><h4><strong><em>@contact.GetContactName()</em></strong></h4> <ul><li><strong>Address:</strong>  @contact.GetContactAddress()</li><li><strong>Phone Number:</strong> @contact.GetContactPhoneNumber()</li></ul>
+      </li>
+    }
+  }
     </ul>
-        <a href="/addContact">Add Another Contact!</a>
+        <a href="/addContact">Add Another Contact!</a> |
+        <a href="/">Go to Home Page!</a>
+        <form action="/addresslist/delete" method="post">
+<button type="submit" name="button">Clear All Contacts</button>
+</form>
     </div>
   </body>
 </html>
