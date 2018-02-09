@@ -19,6 +19,7 @@ If the delete button is selected the user is routed to a success page with the o
 
 ## Technologies Used
 * C#
+* Razor
 * MVC
 * HTML
 * CSS
