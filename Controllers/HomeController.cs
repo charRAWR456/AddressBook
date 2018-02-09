@@ -40,11 +40,11 @@ namespace AddressBook.Controllers
       return View("AddressList", allContacts);
     }
     [HttpPost("/addresslist/delete")]
-         public ActionResult DeleteAll()
-         {
-             Contact.ClearAll();
-             return View();
-         }
+    public ActionResult DeleteAll()
+    {
+      Contact.ClearAll();
+      return View();
+    }
 
     // [httpGet("/{id}")]
     // public ActionResult ContactDetails(int id)
