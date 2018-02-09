@@ -7,7 +7,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>Address List</h1>
+    <div class="jumbotron">
+    <h1  class="center">Address List</h1>
+</div>
+<div class="card">
+  <div class="card-body">
     <ul>
       @if (Model != null)
     {
@@ -18,11 +22,16 @@
     }
   }
     </ul>
-        <a href="/addContact">Add Another Contact!</a> |
-        <a href="/">Go to Home Page!</a>
+    <a class="btn" role="button" href="/addContact">Add Another Contact!</a> |
+    <a class="btn" role="button" href="/">Go to Home Page!</a>
+    
+  </div>
+  <div class="card-footer">
         <form action="/addresslist/delete" method="post">
-<button type="submit" name="button">Clear All Contacts</button>
+<button class="clear" type="submit" name="button">Clear All Contacts</button>
 </form>
+</div>
+</div>
     </div>
   </body>
 </html>

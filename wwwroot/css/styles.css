@@ -1,0 +1,41 @@
+body{
+  background-image: url("../img/back.jpeg");
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  padding-top: 13px;
+  padding-bottom: 0px;
+  margin-top: 15px;
+
+  background-color: teal;
+  opacity: .8;
+}
+
+h1{
+  font-family: fantasy;
+  font-size: 35pt;
+  text-shadow: 2px 2px grey
+}
+
+h3 h4{
+  color: #3b424c;
+}
+
+a{
+  color: #3b424c;
+  background-color: lightgrey;
+  font-weight: bolder;
+}
+
+.card {
+  background-color: teal;
+  opacity: .9;
+}
+
+.clear{
+  float: right;
+}

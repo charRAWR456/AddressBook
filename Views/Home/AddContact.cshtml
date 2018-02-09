@@ -7,7 +7,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>Add A Contact</h1>
+<div class ="jumbotron">
+    <h1  class="center">Add A Contact</h1>
+  </div>
+  <div class="card">
+    <div class="card-body">
     <form action="/addresslist" method= "post">
       <div class="form-group">
         <label for="contact-name">Enter a Name:</label>
@@ -21,8 +25,12 @@
         <label for="contact-address">Enter Address:</label>
         <input id ="contact-address" name="contact-address" class ="form-control" type="text">
       </div>
+    </div>
+    </div>
+    <div class="card-footer">
         <button type="submit" name="button">Add Contact!</button>
       </form>
+    </div>
     </div>
   </body>
 </html>
